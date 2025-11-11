@@ -74,10 +74,12 @@ Added the following bootstrap script under **Advanced details → User data**:
 #!/bin/bash
 # Install Apache Web Server and PHP
 dnf install -y httpd wget php mariadb105-server
+```
 
 
-
-
+# Enable and start Apache web server
+chkconfig httpd on
+service httpd start
 
 
 
